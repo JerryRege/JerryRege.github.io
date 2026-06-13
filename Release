@@ -6,7 +6,7 @@ Codename: ios
 Architectures: iphoneos-arm iphoneos-arm64 iphoneos-arm64e
 Components: main
 Description: 仅用于学习交流
-Date: Sat, 13 Jun 2026 12:48:10 UTC
+Date: Sat, 13 Jun 2026 12:58:20 UTC
 
 MD5Sum:\n d43fbd6d058f6128c37c5036d937c2fa *Packages Packages\n 6a24234956ee7bb22c6e96946f468cb1 *Packages.bz2 Packages.bz2\n 7e8a0c5abbd7eee85c9d86bb010f8485 *Packages.gz Packages.gz\n 3541696282bb52f94975070a2bdfa6c0 *Packages.xz Packages.xz
 
