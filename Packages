@@ -1,4 +1,4 @@
-Package: dev.sys.dipp
+Package: dev.sys.roothide
 Version: 1.0
 Architecture: all
 Maintainer: DPP
@@ -30,13 +30,13 @@ Size: 11568
 MD5sum: e0bb3f795412279fab6f33292b3ee8ec
 SHA1: 74c9e8e2f69d7535f4bc2d2f0bd19b8e72dc92b5
 SHA256: 79d0dd8cb1ddc2cf16f83f838f67aa75c00c167677a5f5aff7edd0c88987268c
-Section: 嗨-系统
+Section: Tweaks
 Description: 允许设备通过USB访问完整的文件系统，对iOS 11及更高版本的设备特别有用
 Tag: purpose::daemon, role::enduser
 Author: saurik, Cannathea <csupport@cannathea.com>
 Name: AFC2(rootless)
 
-Package: dev.sys.dpprootless
+Package: dev.sys.dipp
 Version: 1.0
 Architecture: all
 Maintainer: DPP
