@@ -1,0 +1,15 @@
+Package: dpp-roothide
+Version: 1.0
+Architecture: iphoneos-arm
+Filename: roothide/dpp-roothide.deb
+
+Package: AFC2(rootless)
+Version: 1.0
+Architecture: iphoneos-arm
+Filename: rootless/AFC2(rootless).deb
+
+Package: dpp
+Version: 1.0
+Architecture: iphoneos-arm
+Filename: rootless/dpp.deb
+

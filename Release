@@ -1,34 +1,24 @@
-Origin: dpp隐私保护
-Label: dpp隐私保护
+Origin: JerryRege
+Label: Lanbao Source
 Suite: stable
 Version: 1.0
 Codename: ios
-Architectures: iphoneos-arm iphoneos-arm64 iphoneos-arm64e
+Architectures: iphoneos-arm
 Components: main
-Description: 仅用于学习交流
-Date: Sat, 13 Jun 2026 11:33:44 UTC
+Description: Personal repository
+Date: Sat, 13 Jun 2026 11:38:59 UTC
 
 MD5Sum:
- d41d8cd98f00b204e9800998ecf8427e 0 Packages
- 4059d198768f9f8dc9372dc1c54bc3c3 14 Packages.bz2
- 7029066c27ac6f5ef18d660d5741979a 20 Packages.gz
- 8dc5aea5b03dff8595f096f9e368e888 32 Packages.xz
- d41d8cd98f00b204e9800998ecf8427e 0 Packages.lzma
- d41d8cd98f00b204e9800998ecf8427e 0 Packages.zst
+ 87f0098f357c1d404afb4a3eea7f99ac 283 Packages
+ 5b24423e3c673c301db9a5ae8dc2894e 160 Packages.bz2
+ 8003676c639b0f3c9533bee6683ac80f 144 Packages.gz
 
 SHA1:
- da39a3ee5e6b4b0d3255bfef95601890afd80709 0 Packages
- 64a543afbb5f4bf728636bdcbbe7a2ed0804adc2 14 Packages.bz2
- 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 Packages.gz
- 9746882f4236fa1c3a8f86be2f1d9c46680c0b10 32 Packages.xz
- da39a3ee5e6b4b0d3255bfef95601890afd80709 0 Packages.lzma
- da39a3ee5e6b4b0d3255bfef95601890afd80709 0 Packages.zst
+ 9b899895690f13beaa4e731cdc466e6d4a3b3267 283 Packages
+ 39caf6f47e53c1c5a6536cc37b2f506c40fb84ce 160 Packages.bz2
+ 89ea0f17f8db00e7d921b81093e6138122a6dde4 144 Packages.gz
 
 SHA256:
- e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 Packages
- d3dda84eb03b9738d118eb2be78e246106900493c0ae07819ad60815134a8058 14 Packages.bz2
- 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 Packages.gz
- 0040f94d11d0039505328a90b2ff48968db873e9e7967307631bf40ef5679275 32 Packages.xz
- e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 Packages.lzma
- e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 Packages.zst
-
+ bc8f32a127584da6e48ecbbd0206c5af7d549caa0e5c50834a974055101f8d57 283 Packages
+ 54e4fa620e7ecdc618fad51bfb5c6d82a7480af2e10036716945c4e916c8da0c 160 Packages.bz2
+ cc42aba102460bec9d76d6ba52b68652f8bf6ff983f38d30969247d8b2aacb70 144 Packages.gz
