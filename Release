@@ -6,22 +6,22 @@ Codename: ios
 Architectures: iphoneos-arm iphoneos-arm64 iphoneos-arm64e
 Components: main
 Description: 仅用于学习交流
-Date: Sat, 13 Jun 2026 15:05:09 UTC
+Date: Sat, 13 Jun 2026 15:21:04 UTC
 
 MD5Sum:
- 6cb655f295f2a95b7d193d13eda8bf2d *Packages Packages
- d023b830a1d4e51157e09113e549385f *Packages.bz2 Packages.bz2
- e423b076096f387f76c75e7930a04a47 *Packages.gz Packages.gz
- a46dd13a9448086199d55da16017661f *Packages.xz Packages.xz
+ ae6a1b960c4b0be3a606563eacec43ae *Packages Packages
+ 4aae381f8e719585abf3b9d891ae8567 *Packages.bz2 Packages.bz2
+ d7f81d6d48b1a003c45221f79f093c8f *Packages.gz Packages.gz
+ 5cdcd40d10bb0fd2d8c53c53bc13b97e *Packages.xz Packages.xz
 
 SHA1:
- 0c470bf90adc33f0b0302b321048d20b96203f2b *Packages Packages
- b225f522eefde062cb45ff4128b18b866a28c308 *Packages.bz2 Packages.bz2
- 8fe17d3f4415a228594b6392647f8a8439ce861b *Packages.gz Packages.gz
- 11c8391063b7db4625737f9a6d8824e81b7ad0c5 *Packages.xz Packages.xz
+ 841fa34c65c95afc1ffa05ecbccade01d7e1aa38 *Packages Packages
+ 94fae7cae517384a635773edbec4cd2e3d37161a *Packages.bz2 Packages.bz2
+ 52ec42b1e3081602aeb95f28dbfd6f96e711be9b *Packages.gz Packages.gz
+ 2a81c7bd7b1f831488df8538a3e6b3e67df9f103 *Packages.xz Packages.xz
 
 SHA256:
- b9ec49085c28c5ed1fd0ab409080a9445a2f48580785014500a80515b038c0e3 *Packages Packages
- 58a40edea8f948f6bdfd95269b448d20ffdc3851b87efda729fcebc12ef32070 *Packages.bz2 Packages.bz2
- b46fb970736b73ff943c90a75695e658192de24b8d197840e1e8553c937d7978 *Packages.gz Packages.gz
- 2c8fa91ae64b59b8f76293343e10da2efaa3673d6fd3cc5e089108bfc8522d58 *Packages.xz Packages.xz
+ 542f75bff8a12eed67124ff9099f1b666e68a0bcd31ee65989f3cd619f193a78 *Packages Packages
+ 8818ed9d2afa338f61b876992ecf8698918ae765e1b6344d62880cf849e2f204 *Packages.bz2 Packages.bz2
+ 15f925dd4af3cfe6b8c567a2f4d85c54c6f8516cd798c87ff0d0f589880cdeab *Packages.gz Packages.gz
+ 7e9435ef524f326be0327063363d101ed51b12c413bad2296a58cd1ea88550c0 *Packages.xz Packages.xz
