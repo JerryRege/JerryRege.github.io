@@ -6,33 +6,22 @@ Codename: ios
 Architectures: iphoneos-arm iphoneos-arm64 iphoneos-arm64e
 Components: main
 Description: 仅用于学习交流
-<<<<<<< HEAD
-<<<<<<< HEAD
-Date: Sat, 13 Jun 2026 12:58:20 UTC
-=======
-Date: Sat, 13 Jun 2026 12:36:43 UTC
->>>>>>> 030ee7e (sync repo)
-
-MD5Sum:\n d43fbd6d058f6128c37c5036d937c2fa *Packages Packages\n 6a24234956ee7bb22c6e96946f468cb1 *Packages.bz2 Packages.bz2\n 7e8a0c5abbd7eee85c9d86bb010f8485 *Packages.gz Packages.gz\n 3541696282bb52f94975070a2bdfa6c0 *Packages.xz Packages.xz
-
-SHA1:\n 06cf60527b705ff5459a257f7dd6f4b561594660 *Packages Packages\n 4aa3e52425780add84b4c9a9d6e6825291c6fcdb *Packages.bz2 Packages.bz2\n 53d5e2c371f07e51ac707dff0e16f32f63542b19 *Packages.gz Packages.gz\n 894f31b690e1a44775cc66b752e5d198c79b1ce5 *Packages.xz Packages.xz
-
-SHA256:\n 0affa3386455de0bfdcb3df45eff89bc11935ca0a41992c384925e3ca51d511e *Packages Packages\n ae3c6dccb41d913bee56440d10b5cd3caf87b5607a3e89f8b9984536dc78f541 *Packages.bz2 Packages.bz2\n eedf6b3ed25bd5b4cbcda703d875c1a765447e188f9ca20ef6017d81639bad98 *Packages.gz Packages.gz\n 7461c714c4d04216133f316b9bc9ef4a16eb012712d5b75e82ac78f930486a39 *Packages.xz Packages.xz
-=======
-Date: Sat, 13 Jun 2026 12:42:19 UTC
+Date: Sat, 13 Jun 2026 13:18:13 UTC
 
 MD5Sum:
- d43fbd6d058f6128c37c5036d937c2fa *Packages Packages
- 6a24234956ee7bb22c6e96946f468cb1 *Packages.bz2 Packages.bz2
- 7e8a0c5abbd7eee85c9d86bb010f8485 *Packages.gz Packages.gz
+ 4a98607f5bfbe10638614c9a630f5c87 *Packages Packages
+ 75a5d5c031139b459268de0756dbbfd9 *Packages.bz2 Packages.bz2
+ 2e4f72a4d435d7b20a39e536a14db819 *Packages.gz Packages.gz
+ 2a7bd53764bfaea14a93cacb4c0b5987 *Packages.xz Packages.xz
 
 SHA1:
- 06cf60527b705ff5459a257f7dd6f4b561594660 *Packages Packages
- 4aa3e52425780add84b4c9a9d6e6825291c6fcdb *Packages.bz2 Packages.bz2
- 53d5e2c371f07e51ac707dff0e16f32f63542b19 *Packages.gz Packages.gz
+ b2a13be1135cb26eea199788d188657f35260e58 *Packages Packages
+ 1ae80e5a65e481a71041301b2d02cefd8b8b5166 *Packages.bz2 Packages.bz2
+ ed27f940920c4634598b87754bcd81649b352ae9 *Packages.gz Packages.gz
+ 62dbbdc351049b32eeecddaebe2c258bf9096503 *Packages.xz Packages.xz
 
 SHA256:
- 0affa3386455de0bfdcb3df45eff89bc11935ca0a41992c384925e3ca51d511e *Packages Packages
- ae3c6dccb41d913bee56440d10b5cd3caf87b5607a3e89f8b9984536dc78f541 *Packages.bz2 Packages.bz2
- eedf6b3ed25bd5b4cbcda703d875c1a765447e188f9ca20ef6017d81639bad98 *Packages.gz Packages.gz
->>>>>>> 60efda6 (sync repo)
+ a47a7808f8f36e95114f0965858b601671b92f5e4421da0af050dbdede349c6e *Packages Packages
+ 119ce2e114f2e3c70808b6df2faf0a455241fb44a8315c1b32acae0db2148a87 *Packages.bz2 Packages.bz2
+ 609ab669cf4966ab51fdc93a8dd550d607bcafe650b5b534c6e4ba66c501bf20 *Packages.gz Packages.gz
+ ffe96ea7edc7417820d5d7f9942d3b00137d22655e9479ec742132482ef81385 *Packages.xz Packages.xz

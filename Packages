@@ -1,0 +1,52 @@
+Package: dev.sys.dipp
+Version: 1.0
+Architecture: all
+Maintainer: DPP
+Depends: firmware (>= 14.0), mobilesubstrate
+Filename: roothide/dpp-roothide.deb
+Size: 3692790
+MD5sum: d982eb5ae183ba3f32e8f89df92437c8
+SHA1: 93d6567cdf0211577257f44a64b8578f46404cf9
+SHA256: 4c9d7bb4f9d49079007f6b2ad7c96be32a2313515bc00afcf5fad5fbc580ac64
+Section: Tweaks
+Priority: optional
+Description: roothide安装此版本
+Author: Apple
+Name: DPP(roothide)
+
+Package: com.dao.afc2
+Version: 1.1.7-1
+Architecture: iphoneos-arm64
+Maintainer: Cannathea <csupport@cannathea.com>
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: cy+cpu.arm64, mobilesubstrate, firmware (>= 11.0), ldid | firmware (>= 15.0)
+Conflicts: com.saurik.afc2d, net.angelxwind.afc2d-arm64, com.mrmadtw.afc2forios11, repo.feng.afc2add11, us.scw.afctwoadd, net.angelxwind.afc2ios70, afc2.25pp, afc2.25pp7, afc2.91, app.taig.afc2, com.cannathea.afc2d-arm64, com.82skao.afc2d-arm64
+Replaces: com.saurik.afc2d, net.angelxwind.afc2d-arm64, com.mrmadtw.afc2forios11, repo.feng.afc2add11, us.scw.afctwoadd, net.angelxwind.afc2ios70, afc2.25pp, afc2.25pp7, afc2.91, app.taig.afc2
+Provides: com.saurik.afc2d, net.angelxwind.afc2d-arm64, com.mrmadtw.afc2forios11, repo.feng.afc2add11, us.scw.afctwoadd, net.angelxwind.afc2ios70, afc2.25pp, afc2.25pp7, afc2.91, app.taig.afc2
+Filename: rootless/AFC2(rootless).deb
+Size: 11568
+MD5sum: e0bb3f795412279fab6f33292b3ee8ec
+SHA1: 74c9e8e2f69d7535f4bc2d2f0bd19b8e72dc92b5
+SHA256: 79d0dd8cb1ddc2cf16f83f838f67aa75c00c167677a5f5aff7edd0c88987268c
+Section: Tweaks
+Description: 允许设备通过USB访问完整的文件系统，对iOS 11及更高版本的设备特别有用
+Tag: purpose::daemon, role::enduser
+Author: saurik, Cannathea <csupport@cannathea.com>
+Name: AFC2(rootless)
+
+Package: dev.sys.dpprootless
+Version: 1.0
+Architecture: all
+Maintainer: DPP
+Depends: firmware (>= 14.0), mobilesubstrate
+Filename: rootless/dpp.deb
+Size: 3692808
+MD5sum: 2a431ad501f3ffcef37a85c08f70a1bd
+SHA1: 9016a8d09f6e12305595e6973274d2fb4ba7aa1f
+SHA256: 4154c3291bf1e004dd3515056cb9c48010f9b8e9980ff6f6069f0069e826426a
+Section: Tweaks
+Priority: optional
+Description: rootless安装此版本
+Author: Apple
+Name: DPP
+
