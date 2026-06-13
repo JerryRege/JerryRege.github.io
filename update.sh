@@ -2,52 +2,59 @@
 echo "1、删除旧版Packages"
 rm -f Packages Packages.*
 
-echo "2、扫描重新生成、压缩Packages"
+echo "2、生成 Packages（混合模式：元信息写死，哈希动态读取）"
 
 # 清空 Packages 文件
 > Packages
 
-# 手动扫描 roothide、rootless、rootful 目录
-for dir in roothide rootless rootful; do
-    if [ -d "$dir" ]; then
-        echo "扫描目录: $dir/"
-        for deb in $(find "$dir" -name "*.deb" 2>/dev/null); do
-            echo "  处理: $(basename "$deb")"
-            
-            # 从文件名提取包名和版本
-            filename=$(basename "$deb")
-            pkgname=${filename%.deb}
-            
-            # 尝试提取版本号（通常格式：包名_版本.deb）
-            version="1.0"
-            if echo "$pkgname" | grep -q "_"; then
-                version=$(echo "$pkgname" | sed 's/.*_//')
-                pkgname=$(echo "$pkgname" | sed 's/_.*//')
-            fi
-            
-            # 计算文件大小和哈希
-            size=$(stat -c%s "$deb" 2>/dev/null || stat -f%z "$deb" 2>/dev/null)
-            md5=$(md5sum "$deb" 2>/dev/null | cut -d' ' -f1)
-            sha1=$(sha1sum "$deb" 2>/dev/null | cut -d' ' -f1)
-            sha256=$(sha256sum "$deb" 2>/dev/null | cut -d' ' -f1)
-            
-            # 写入 Packages
-            cat >> Packages << PKGEOF
+# 定义三个插件的信息（写死的部分）
+# 格式: "包名|版本|架构|维护者|依赖|描述|文件名路径"
+cat > /tmp/pkg_list.txt << 'LIST'
+dev.sys.dipp|1.0|all|DPP|firmware (>= 14.0), mobilesubstrate|roothide安装此版本|roothide/dpp-roothide.deb|DPP(roothide)
+com.dao.afc2|1.1.7-1|iphoneos-arm64|Cannathea <csupport@cannathea.com>|cy+cpu.arm64, mobilesubstrate, firmware (>= 11.0), ldid \| firmware (>= 15.0)|允许设备通过USB访问完整的文件系统|rootless/AFC2(rootless).deb|AFC2(rootless)
+dev.sys.dpprootless|1.0|all|DPP|firmware (>= 14.0), mobilesubstrate|rootless安装此版本|rootless/dpp.deb|DPP
+LIST
+
+# 读取列表并处理每个插件
+while IFS='|' read -r pkgname version arch maintainer deps description filename name; do
+    echo "  处理: $filename"
+    
+    # 检查 deb 文件是否存在
+    if [ ! -f "$filename" ]; then
+        echo "    警告: 文件不存在 - $filename"
+        continue
+    fi
+    
+    # 动态计算 Size 和哈希
+    size=$(stat -c%s "$filename" 2>/dev/null || stat -f%z "$filename" 2>/dev/null)
+    md5=$(md5sum "$filename" 2>/dev/null | cut -d' ' -f1)
+    sha1=$(sha1sum "$filename" 2>/dev/null | cut -d' ' -f1)
+    sha256=$(sha256sum "$filename" 2>/dev/null | cut -d' ' -f1)
+    
+    # 写入 Packages
+    cat >> Packages << EOF
 Package: $pkgname
 Version: $version
-Architecture: iphoneos-arm
-Maintainer: unknown
-Description: Auto generated package
-Filename: $deb
+Architecture: $arch
+Maintainer: $maintainer
+Depends: $deps
+Filename: $filename
 Size: $size
 MD5sum: $md5
 SHA1: $sha1
 SHA256: $sha256
+Section: Tweaks
+Priority: optional
+Description: $description
+Author: Apple
+Name: $name
 
-PKGEOF
-        done
-    fi
-done
+EOF
+    
+    echo "    已添加: $pkgname ($size bytes)"
+done < /tmp/pkg_list.txt
+
+rm -f /tmp/pkg_list.txt
 
 echo "生成的包数量: $(grep -c '^Package:' Packages)"
 
@@ -72,15 +79,10 @@ fi
 
 echo "4、生成 Release 文件"
 
-# 获取文件大小和哈希的函数
-get_size() {
-    stat -c%s "$1" 2>/dev/null || stat -f%z "$1" 2>/dev/null || echo "0"
-}
-
 # 生成 Release
 cat > Release << EOF
-Origin: dpp隐私保护
-Label: dpp隐私保护
+Origin: dpp软改工具
+Label: dpp软改工具
 Suite: stable
 Version: 1.0
 Codename: ios

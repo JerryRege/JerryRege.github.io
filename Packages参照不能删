@@ -2,11 +2,7 @@ Package: dev.sys.dipp
 Version: 1.0
 Architecture: all
 Maintainer: DPP
-<<<<<<< HEAD
 Description: firmware (>= 14.0), mobilesubstrate
-=======
-Depends: firmware (>= 14.0), mobilesubstrate
->>>>>>> 16a2905 (sync repo)
 Filename: roothide/dpp-roothide.deb
 Size: 3692790
 MD5sum: d982eb5ae183ba3f32e8f89df92437c8
@@ -16,7 +12,6 @@ Section: Tweaks
 Priority: optional
 Description: roothide安装此版本
 Author: Apple
-<<<<<<< HEAD
 Depiction: DPP
 Dev: Apple
 Icon: xx
@@ -42,10 +37,6 @@ Tag: purpose::daemon, role::enduser
 Author: saurik, Cannathea <csupport@cannathea.com>
 Name: AFC2(rootless)
 
-=======
-Name: DPP(roothide)
-
->>>>>>> 16a2905 (sync repo)
 Package: dev.sys.dpprootless
 Version: 1.0
 Architecture: all
@@ -58,13 +49,6 @@ SHA1: 9016a8d09f6e12305595e6973274d2fb4ba7aa1f
 SHA256: 4154c3291bf1e004dd3515056cb9c48010f9b8e9980ff6f6069f0069e826426a
 Section: Tweaks
 Priority: optional
-<<<<<<< HEAD
 Author: Apple
 Icon: xx
 Name: DPP
-=======
-Description: rootless安装此版本
-Author: Apple
-Name: DPP
-
->>>>>>> 16a2905 (sync repo)
