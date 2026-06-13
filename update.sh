@@ -7,7 +7,7 @@ echo "=========================================="
 # 删除旧文件
 echo ""
 echo "1、删除旧版文件"
-rm -f Packages Packages.bz2 Packages.gz Packages.xz Release
+ rm -f Packages Packages.bz2 Packages.gz Packages.xz Release
 echo "  已删除旧文件"
 
 # 生成 Packages
@@ -23,7 +23,7 @@ echo "开始处理插件..."
 # ============================================================
 # 插件1: dev.sys.dipp (roothide)
 # ============================================================
-pkgname="dev.sys.dipp
+pkgname="dev.sys.dipp"
 version="1.0"
 architecture="all"
 maintainer="DPP"
